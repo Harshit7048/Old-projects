@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Harshit7048
+- 👋 Hi, I’m Harshit Bhardwaj
 - 👀 I’m interested in Web development,Ai development,machine learning
 - 🌱 I’m currently learning advanced javascript
 - 💞️ I’m looking to collaborate on javascript , machine learning
