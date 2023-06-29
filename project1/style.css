@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    position: absolute;
+
+    height: 80px;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.top-up {
+    top: -20%;
+}
+
+.top-down {
+    top: 0;
+}
+
+nav img {
+    position: absolute;
+    left: 2%;
+    height: 100%;
+    justify-self: flex-start;
+}
+
+#button {
+    position: absolute;
+    right: 5%;
+
+}
+
+#button a {
+    text-decoration: none;
+    background-color: rgb(85, 85, 250);
+    padding: 8px 10px;
+    padding-right: 45px;
+    color: white;
+    border-radius: 5px;
+}
+
+nav ul {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(134, 133, 133);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Steelfish Rg', 'helvetica neue',
+        helvetica, arial, sans-serif;
+    font-size: 17px;
+    padding: 10px 10px;
+    transition: all 0.5s;
+    border-bottom: 1px solid honeydew;
+
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid black;
+}
+
+#whey {
+    /* height: 65vh; */
+    width: 30%;
+    /* background-color: rebeccapurple; */
+    position: absolute;
+
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.whey-height {
+    height: 400px;
+}
+
+#whey img {
+    height: 100%;
+
+}
+
+.whey-top {
+    top: 15vh;
+}
+
+.whey-left {
+    left: -65%;
+}
+
+.whey-left-original {
+    left: 35%;
+}
+
+.whey-left-second-page {
+    left: 55%;
+}
+
+.whey-size-bigger {
+    height: 800px;
+    /* transform: rotate(25deg); */
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    background-color: honeydew;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#text-home {
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+    transition: all 1s;
+}
+
+.bottom-down {
+    bottom: -75%;
+
+}
+
+.bottom-up {
+    bottom: 20%;
+}
+
+#text-home p {
+    background-image: url('https://e0.pxfuel.com/wallpapers/418/366/desktop-wallpaper-3440-x-1440-pixels.jpg');
+    background-repeat: repeat;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 100px;
+    font-size: 90px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue',
+        helvetica, arial, sans-serif;
+    font-weight: 1000;
+    -webkit-font-smoothing: antialiased;
+    /* text-shadow: 1px 2px 5px black; */
+}
+
+#hydration {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+
+}
+
+#refreshing {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+
+}
+
+#home-2 {
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+
+#home-2-child {
+    height: 80%;
+    width: 60%;
+    /* background-color: tan; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    position: absolute;
+    transition: all 1s;
+    top: 15%;
+    z-index: 3;
+
+}
+
+.home-2-left {
+    left: -80%;
+}
+
+.home-2-left-original {
+    left: 1%;
+}
+
+.home-2-child-child:nth-child(1) {
+    height: 20%;
+    /* background-color: rebeccapurple; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 55px;
+    padding-left: 25px;
+    font-weight: bold;
+    color: honeydew;
+    text-shadow: 1px 2px 4px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-2-child-child:nth-child(2) {
+    height: 50%;
+    /* background-color: rgb(41, 14, 68); */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-2-child-child:nth-child(3) {
+    height: 30%;
+    /* background-color: rgb(135, 112, 159); */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    padding-left: 85px;
+    font-size: 95px;
+    color: rgb(95, 92, 92);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-child-cards {
+    width: 33%;
+    border-radius: 5px;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    /* box-shadow: 2px 3px 8px rgb(152, 149, 149); */
+
+}
+
+.home-child-cards img {
+    height: 110%;
+    /* width: 100%; */
+    z-index: 4;
+    background-color: rebeccapurple;
+    border-radius: 50px;
+    transition: all 0.4s;
+    position: absolute;
+
+}
+
+.home-2-card-opacity {
+    opacity: 0.5;
+}
+
+.home-child-cards:nth-child(1) {
+    height: 90%;
+    background: url('https://media.tenor.com/P-dU0-qevuAAAAAC/samsung-samsung-galaxy.gif') no-repeat center center/cover;
+    background-color: rgb(10, 9, 9);
+}
+
+.home-child-cards:nth-child(2) {
+    height: 90%;
+    ;
+    background: url('https://media.tenor.com/BxQZLxzp9ScAAAAC/s21ultra-galaxy-s21ultra.gif') no-repeat center center/cover;
+    background-color: rgb(15, 14, 14);
+}
+
+.home-child-cards:nth-child(3) {
+    height: 90%;
+    background: url('https://media.tenor.com/-zJNsMGpSWIAAAAd/samsung-samsung-galaxy.gif') no-repeat center center/cover;
+
+    background-color: rgb(13, 12, 12);
+}
+
+/* .home-card-active {
+    width: 65%;
+} */
+
+#home-2-child-img {
+    position: absolute;
+    top: 8%;
+    height: 80%;
+    width: 60%;
+    background-color: rebeccapurple;
+
+    background: url('https://hnsfpau.imgix.net/5/images/detailed/242/HDSAMS918BGR.04.jpg?fit=fill&bg=0FFF&w=1500&h=844&auto=format,compress') no-repeat center center/cover;
+    z-index: 2;
+    transition: all 1s;
+    transform: rotate(25deg);
+}
+
+.home-2-child-img-right {
+    right: -68%;
+}
+
+.home-2-child-img-right-original {
+    right: -8%;
+}
+
+.home-2-cards-text-upper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.home-2-cards-text-upper p {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#home-3 {
+    position: relative;
+    height: 90vh;
+    background-color: rgb(6, 6, 6);
+    width: 100%;
+    z-index: 3;
+    /* background: url('https://media.tenor.com/2hK16p4v888AAAAd/s23ultra-samsung.gif') no-repeat center center/cover; */
+}
+
+#home-3-child-upper {
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    background-color: rebeccapurple;
+    opacity: 0.7;
+    transition: all 0.4s;
+    background: url('https://assets.beartai.com/uploads/2023/02/coverfinanceaissamsung-1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    /* transform: rotateY(180deg); */
+
+}
+
+#home-3-text {
+    height: 90%;
+    width: 40%;
+    position: absolute;
+    z-index: 5;
+    right: 2%;
+    /* background-color: red; */
+    top: 5%;
+}
+
+#home-3-text p {
+    font-size: 85px;
+    margin-left: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serifs;
+    font-weight: bold;
+    margin-top: 20%;
+    color: white;
+    text-shadow: 1px 1px 2px white;
+
+}
+
+
+#home-4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: rebeccapurple; */
+    overflow: hidden;
+}
+
+#buy-form {
+    position: absolute;
+    height: 80vh;
+    width: 50%;
+    /* right: 5%; */
+    top: 10%;
+    /* background: #ff0000; */
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 1s;
+    flex-direction: column;
+
+}
+
+#buy-form p {
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
+
+.form-right {
+    right: -60%;
+}
+
+.form-right-original {
+    right: 5%;
+}
+
+#buy-form form {
+    height: 70%;
+    width: 70%;
+    /* background-color: firebrick; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    position: relative;
+    top: -5%;
+}
+
+.form-upper-input {
+    margin: 15px 0px;
+    height: 45px;
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: rgb(235, 233, 233);
+
+}
+
+#form-submit {
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    left: 18%;
+    bottom: 25%;
+    background: none;
+    border: none;
+    color: rgb(253, 252, 252);
+    border-radius: 5px;
+    background-color: rgb(253, 132, 132);
+    cursor: pointer;
+
+}
+
+#home-4-img {
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    background-color: firebrick;
+    top: 10%;
+    background: url('https://www.91-cdn.com/hub/wp-content/uploads/2022/08/Samsung-Galaxy-S22-Ultra-Green.jpg') no-repeat center center/cover;
+    transition: all 1s;
+}
+
+.home-4-img-left {
+    left: -70%;
+}
+
+.home-4-img-left-original {
+    left: 2%;
+}
+
+#home-5 {
+    height: 180vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home-5-p {
+    font-size: 45px;
+    margin: 15px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home-5-child {
+    height: 28%;
+    width: 95%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-5-child:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.home-5-child-img {
+    height: 100%;
+    width: 40%;
+    background-color: darkblue;
+}
+
+.home-5-img-left {
+    left: -60%;
+}
+
+.home-5-img-left-original {
+    left: 0%;
+}
+
+.home-5-img-right-original {
+    right: 0%;
+}
+
+.home-5-img-right {
+    right: -60%;
+}
+
+.home-5-img-camera {
+    background: url('https://img.global.news.samsung.com/global/wp-content/uploads/2023/02/Unpacked_Galaxy_S23_Camera_main1.jpg') no-repeat center center/cover;
+}
+
+.home-5-img-screen {
+    background: url('https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/09/IMG_20220913_101218-scaled.jpg?ssl=1&quality=80&w=f') no-repeat center center/cover;
+}
+
+.home-5-img-5g {
+    background: url('https://www.concept-phones.com/wp-content/uploads/2023/01/Samsung-Galaxy-S23-Ultra-flat-screen-3.jpg') no-repeat center center/cover;
+}
+
+.home-5-child-text {
+    height: 100%;
+    /* background-color: saddlebrown; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-5-child-text p {
+    font-size: 17px;
+    width: 80%;
+    margin-top: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.home-5-child-text h1 {
+    font-size: 45px;
+    margin-top: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    height: 60vh;
+    width: 100%;
+    background-color: honeydew;
+    position: relative;
+    margin-top: 5%;
+}
+
+.footer-child {
+    position: absolute;
+    bottom: 5%;
+    height: 80%;
+    width: 50%;
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav {
+    height: 80%;
+    width: 20%;
+    /* background: firebrick; */
+}
+
+.footer-nav ul {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.footer-nav ul li {
+    list-style: none;
+    margin: 8px 10px;
+
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    /* background-color: red; */
+    padding: 5px 10px;
+    color: gray;
+    transition: all 0.4s;
+}
+
+.footer-nav ul li a:hover {
+    color: blue;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
